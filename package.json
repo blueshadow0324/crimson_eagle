@@ -1,0 +1,10 @@
+{
+  "name": "fikastunden_Crison_eagle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true
+}
