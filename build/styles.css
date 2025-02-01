@@ -380,46 +380,8 @@ button[type="submit"]:hover {
     z-index: 1000;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .top-bar h1 {
-        font-size: 28px;
-    }
-
-    .search-login input {
-        font-size: 16px;
-        width: 200px;
-    }
-
-    .search-login a {
-        font-size: 16px;
-    }
-
-    nav {
-        display: none; /* Hide desktop nav on mobile */
-    }
-
-    .mobile-nav {
-        display: block; /* Show mobile nav */
-    }
-
-    .hamburger {
-        display: block;
-        color: #333;
-        cursor: pointer;
-    }
-
-    .products {
-        flex-direction: column; /* Stack products vertically */
-    }
-
-    .product {
-        width: 90%; /* Make products more mobile-friendly */
-        margin-bottom: 20px;
-    }
-
-    .cart-menu {
-        width: 100%;
-        padding: 10px;
+@media (min-width: 768px) {
+    .checkout-modal {
+        display: flex;
     }
 }
