@@ -14,6 +14,7 @@ header {
 }
 
 .top-bar {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -393,75 +394,25 @@ button[type="submit"]:hover {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .top-bar h1 {
-        font-size: 28px;
+        font-size: 36px; /* Keep the same font size on mobile */
     }
 
-    nav {
-        display: none;
+    .search-login {
+        justify-content: flex-end; /* Keep alignment on mobile */
+    }
+}
+
+/* Additional possible mobile-specific adjustments (optional) */
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0; /* Slightly smaller padding on very small screens */
     }
 
-    .mobile-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #d7f6e4;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
+    .search-login input {
+        font-size: 14px; /* Smaller input text on mobile */
     }
 
-    .mobile-nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        font-size: 18px;
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #ccc;
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-
-    .product {
-        max-width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .products {
-        gap: 10px;
-    }
-
-    .cart-menu {
-        width: 250px;
-    }
-
-    .cart-buttons button {
-        font-size: 12px;
-        padding: 8px 12px;
-    }
-
-    .om-oss, .kontakt {
-        padding: 20px;
-        max-width: 100%;
-    }
-
-    .om-oss h2, .kontakt h2 {
-        font-size: 24px;
-    }
-
-    .cta-button, button[type="submit"] {
-        width: 100%;
-    }
-
-    button.add-to-cart {
-        width: 100%;
+    .search-login a {
+        font-size: 16px; /* Adjust font size of the link on mobile */
     }
 }
