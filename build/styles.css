@@ -11,6 +11,7 @@ body {
 header {
     background-color: #d7f6e4;
     padding: 20px 0;
+    box-sizing: border-box;
 }
 
 .top-bar {
@@ -18,12 +19,14 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    padding: 0 15px;
 }
 
 .top-bar h1 {
-    font-size: 36px;
+    font-size: 36px; /* Larger font size for the header */
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .search-login {
@@ -31,22 +34,28 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
+    gap: 20px; /* Increased space between input and link */
 }
 
 .search-login input {
-    padding: 10px;
-    font-size: 16px;
+    padding: 12px;
+    font-size: 18px; /* Larger text for input field */
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 10px;
+    width: 250px; /* Slightly larger input field */
+    max-width: 100%;
 }
 
 .search-login a {
     text-decoration: none;
     color: #333;
-    font-size: 18px;
-    margin-left: 10px;
+    font-size: 20px; /* Larger font for the link */
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.search-login a:hover {
+    color: #007b5e; /* Green hover effect for the link */
 }
 
 /* Navigation */
@@ -371,48 +380,3 @@ button[type="submit"]:hover {
     z-index: 1000;
 }
 
-.checkout-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-}
-
-.checkout-form input {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 8px;
-}
-
-.checkout-form button {
-    margin-top: 10px;
-    padding: 10px;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .top-bar h1 {
-        font-size: 36px; /* Keep the same font size on mobile */
-    }
-
-    .search-login {
-        justify-content: flex-end; /* Keep alignment on mobile */
-    }
-}
-
-/* Additional possible mobile-specific adjustments (optional) */
-@media (max-width: 480px) {
-    header {
-        padding: 15px 0; /* Slightly smaller padding on very small screens */
-    }
-
-    .search-login input {
-        font-size: 14px; /* Smaller input text on mobile */
-    }
-
-    .search-login a {
-        font-size: 16px; /* Adjust font size of the link on mobile */
-    }
-}
